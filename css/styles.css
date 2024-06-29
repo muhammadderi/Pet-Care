@@ -14,6 +14,16 @@
   color: #f4fce3;
 }
 
+.pet-navbar a {
+  text-decoration: none;
+  color: #f4fce3;
+}
+
+.pet-navbar a:hover {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .pet-navbar ul li {
   list-style-type: none;
 }
@@ -30,12 +40,24 @@
   color: #f4fce3;
 }
 
+.nav-icons img:hover {
+  width: 40px;
+}
+
 .nav-img {
   filter: brightness(0) invert(1);
 }
 
 .nav-general {
   font-size: 19px;
+}
+
+.nav-general li a {
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-general li a:hover {
+  transform: scale(1.1);
 }
 
 /* section-1 */
@@ -57,6 +79,7 @@
 
 .sec-page-1 {
   text-align: center;
+  animation: fadeInUp 3s ease-out forwards;
 }
 
 .sec-page-1 h1 {
@@ -72,6 +95,12 @@
 .sec-page-2 img {
   width: 500px;
   height: 500px;
+  transform: scale(1);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.sec-page-2:hover img {
+  transform: scale(0);
 }
 
 .section-2 {
@@ -101,7 +130,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  padding: 100px 0;
+  padding: 200px 0;
 }
 
 .article-section3 {
@@ -156,7 +185,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 400px; /* Adjust height as needed */
+  height: 400px;
 }
 
 .carousel-slide {
@@ -174,8 +203,8 @@
 .carousel-slide img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; /* Ensure images fit within the container */
-  margin-bottom: 10px; /* Space between image and product info */
+  object-fit: contain;
+  margin-bottom: 10px;
 }
 
 .product-info {
@@ -246,6 +275,18 @@
   margin: 0 auto;
 }
 
+.service-steps img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-steps img:hover {
+  transform: scale(1.1);
+}
+
 .article-section5 img {
   width: 150px;
   height: 150px;
@@ -291,4 +332,15 @@
   text-align: center;
   padding: 20px;
   color: #51cf66;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
