@@ -9,38 +9,30 @@
   </head>
   <body>
     <header>
-      <nav class="pet-navbar">
-        <h1>Pet Store</h1>
-        <ul class="nav-general">
-          <li><a href="">Home</a></li>
-          <li><a href="">About U</a></li>
-          <li><a href="">Product</a></li>
-          <li><a href="">Service</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-
-        <ul class="nav-icons">
-          <li>
-            <a>
-              <img
-                src="/icons/icons8-facebook-50.png"
-                class="nav-img"
-                alt="facebook"
-              />
-            </a>
-          </li>
-          <li>
-            <a>
-              <img
-                src="/icons/icons8-instagram-50.png"
-                class="nav-img"
-                alt="instagram"
-              />
-            </a>
-          </li>
-          <li>
-            <a><img src="/icons/icons8-x-24.png" class="nav-img" alt="X" /></a>
-          </li>
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">Pet Store</div>
+    
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+    
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+    
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+    
+            <li class="services">
+              <a href="/">Product</a>
+            </li>
+    
+            <li><a href="/">Service</a></li>
+            <li><a href="/">Contact</a></li>
+          </div>
         </ul>
       </nav>
     </header>
