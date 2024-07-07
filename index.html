@@ -9,38 +9,28 @@
   </head>
   <body>
     <header>
-      <nav class="pet-navbar">
-        <h1>Pet Store</h1>
-        <ul class="nav-general">
-          <li><a href="">Home</a></li>
-          <li><a href="">About U</a></li>
-          <li><a href="">Product</a></li>
-          <li><a href="">Service</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">Pet Store</div>
 
-        <ul class="nav-icons">
-          <li>
-            <a>
-              <img
-                src="/icons/icons8-facebook-50.png"
-                class="nav-img"
-                alt="facebook"
-              />
-            </a>
-          </li>
-          <li>
-            <a>
-              <img
-                src="/icons/icons8-instagram-50.png"
-                class="nav-img"
-                alt="instagram"
-              />
-            </a>
-          </li>
-          <li>
-            <a><img src="/icons/icons8-x-24.png" class="nav-img" alt="X" /></a>
-          </li>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+
+            <li class="services">
+              <a href="/">Product</a>
+            </li>
+
+            <li><a href="/">Service</a></li>
+            <li><a href="/">Contact</a></li>
+          </div>
         </ul>
       </nav>
     </header>
@@ -146,8 +136,8 @@
         </div>
       </article>
       <article class="section article-section5">
-        <h3>Enjoy Our Service</h3>
-        <h1>Book Your Service in 3 Easy Steps</h1>
+        <h1>Enjoy Our Service</h1>
+        <h3>Book Your Service in 3 Easy Steps</h3>
         <div class="service-steps">
           <section>
             <img src="/images/service-1.png" alt="Service 1" />
@@ -176,22 +166,22 @@
         </div>
       </article>
       <article class="article-section6">
-        <section>
+        <section class="sec6-card">
           <h1>Pet Store</h1>
         </section>
-        <section>
+        <section class="sec6-card">
           <h3>Company</h3>
           <h5>About Us</h5>
           <h5>FAQ</h5>
           <h5>Contact</h5>
         </section>
-        <section>
+        <section class="sec6-card">
           <h3>Legal</h3>
           <h5>Privacy Policy</h5>
           <h5>Term and Condition</h5>
           <h5>Cookie Policy</h5>
         </section>
-        <section>
+        <section class="sec6-card">
           <h3>Help</h3>
           <h5>Shipping and Delivery</h5>
           <h5>Return Policy</h5>
