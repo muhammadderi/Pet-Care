@@ -543,4 +543,8 @@ input[type="checkbox"] {
     flex-direction: column;
     padding: 10px 0;
   }
+.sec6-card h1 {
+  font-size: 27px;
+}
+  
 }
