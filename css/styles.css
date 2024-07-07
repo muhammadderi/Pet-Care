@@ -20,6 +20,10 @@ li {
   padding: 20px;
   background-color: #51cf66;
   color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* overflow: hidden; */
 }
 
 .nav-links a {
