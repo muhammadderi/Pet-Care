@@ -393,6 +393,16 @@ input[type="checkbox"] {
 
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
   .menu {
     display: none;
     position: absolute;
@@ -457,12 +467,13 @@ input[type="checkbox"] {
   }
 
   .section-2 {
-    padding: 50px 50px;
+    padding: 20px;
+    width: 100%;
     min-height: 100px;
   }
 
   .article-section2 {
-    padding: 50px 100px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
   }
@@ -473,7 +484,7 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px 10px;
+    padding: 20px 0;
   }
 
   .article-section3 h1 {
@@ -520,6 +531,11 @@ input[type="checkbox"] {
   h2 {
     font-size: 30px;
     padding: 10px 0;
+  }
+
+  .article-section5 img {
+    width: 120px;
+    height: 120px;
   }
 
   .article-section6 {
